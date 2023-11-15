@@ -10,7 +10,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link 
+    <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,15 @@
 </head>
 
 <body>
-    <video id="bgVideo" class="background-image" src="assets/newrepl.mov" muted loop autoplay></video>
+    <video id="bgVideo" class="background-image" src="assets/repl.mov" muted loop playsinline></video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('bgVideo');
+            video.play();
+        });
+    </script>
+
 
 
     <header id="header" class="header-tops">
@@ -144,10 +152,11 @@
                                 mission, focusing on exploring Enceladus, Saturn's moon.
                             </li>
                             <li style="margin-bottom: 20px;">
-                                Led comprehensive analysis and documentation for the telecommunications, data computing, 
-								and software architecture of a pioneering spacecraft mission, forecasting a streamlined 
-								project plan and anticipating a 15% reduction in estimated costs through meticulous resource 
-								optimization.
+                                Led comprehensive analysis and documentation for the telecommunications, data computing,
+                                and software architecture of a pioneering spacecraft mission, forecasting a streamlined
+                                project plan and anticipating a 15% reduction in estimated costs through meticulous
+                                resource
+                                optimization.
                             </li>
                         </ul>
                     </div>
@@ -546,8 +555,9 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script> 
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="script.js"></script>
 
 </body>
+
 </html>
