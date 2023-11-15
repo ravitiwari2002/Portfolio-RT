@@ -1,3 +1,60 @@
+const matrixRain = document.getElementById('matrixRain');
+const cw = window.innerWidth;
+const ch = window.innerHeight;
+const charArr = ['0','1'];
+const maxCharCount = 100;
+const fallingCharArr = [];
+const fontSize = 10;
+const maxColums = cw/(fontSize);
+matrixRain.width = cw;
+matrixRain.height = ch;
+
+function randomInt( min, max ) {
+    return Math.floor(Math.random() * ( max - min ) + min);
+}
+
+function randomFloat( min, max ) {
+    return Math.random() * ( max - min ) + min;
+}
+
+function Point(x,y)
+{
+    this.x = x;
+    this.y = y;
+}
+
+Point.prototype.draw = function(ctx){
+    this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
+    this.speed = randomFloat(1,5);
+    ctx.fillStyle = "rgba(135,206,250,0.8)";
+    ctx.font = fontSize+"px san-serif";
+    ctx.fillText(this.value,this.x,this.y);
+    this.y += this.speed;
+    if(this.y > ch)
+    {
+        this.y = randomFloat(-100,0);
+        this.speed = randomFloat(2,5);
+    }
+}
+
+for(var i = 0; i < maxColums ; i++) {
+    fallingCharArr.push(new Point(i*fontSize,randomFloat(-500,0)));
+}
+
+var update = function()
+{
+    ctx = matrixRain.getContext('2d');
+    ctx.fillStyle = "rgba(0,0,0,0.05)";
+    ctx.fillRect(0,0,cw,ch);
+    var i = fallingCharArr.length;
+    while (i--) {
+        fallingCharArr[i].draw(ctx);
+    }
+    requestAnimationFrame(update);
+}
+
+update();
+
 !(function($) {
     "use strict";
   
@@ -94,3 +151,23 @@
     typeSpeed: 65,
     backSpeed: 65
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var links = document.querySelectorAll('a[href^="#"]');
+  
+  links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          var targetId = this.getAttribute('href').substring(1);
+          var targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: 'smooth'
+              });
+          }
+      });
+  });
+});
+

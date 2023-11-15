@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link rel="icon" type="image/png" href="assets/img/logo.jpeg" />
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -24,7 +24,8 @@
 </head>
 
 <body>
-    <video id="bgVideo" class="background-image" src="assets/repl.mov" muted loop autoplay playsinline></video>
+    <canvas id="matrixRain">Canvas is not supported in your browser.</canvas>
+    <!--  <video id="bgVideo" class="background-image" src="assets/repl.mov" muted loop autoplay playsinline></video> -->
 
     <header id="header" class="header-tops">
         <div class="container">
@@ -106,7 +107,7 @@
                         <h5 style="text-align:left;"><em>Bachelor of Science in Computer Science, <strong>GPA:
                                     4.00/4.00</strong></em></h5>
                         <span class="left" style="float:left;color:#fff;"><em>August 2020 - May 2024</em></span>
-                        <span class="right" style="float:right;color:#fff;"><em>Tempe, Arizona</em></span><br><br>
+                        <span class="right" style="float:right;color:#fff;"><em>Tempe, Arizona</em></span><br><br><br>
                         <h6 style="text-align:left;"><strong>Relevant Coursework:</strong></h6>
                         <ul style="columns:2;text-align:left;">
                             <li>Object&#8209;Oriented Programming</li>
@@ -115,6 +116,21 @@
                             <li>Distributed Software Development</li>
                             <li>Software Integration and Engineering </li>
                             <li>Software Analysis and Design </li>
+                            <style>
+                                @media (max-width: 768px) {
+                                    ul {
+                                        list-style-type: disc; /* Add bullet points to the list items */
+                                        padding: 0;
+                                        margin-top: 10px; /* Add space before the list */
+                                    }
+                            
+                                    li {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            </style>
+                            
+                            
                         </ul>
                     </div>
                 </div>
@@ -125,10 +141,7 @@
     <section id="experience" class="services">
         <div class="container" style="padding-top: 80px;">
             <div class="row">
-
-
                 <div class="col-lg-12" data-aos="fade-up">
-
                     <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
 
                         <h4 style="text-align:left;"><a href="https://www.nasa.gov/" target="_blank"
@@ -143,13 +156,16 @@
                                 mission, focusing on exploring Enceladus, Saturn's moon.
                             </li>
                             <li style="margin-bottom: 20px;">
-                                Led comprehensive analysis and documentation for the telecommunications, data computing,
+                                Led cosmprehensive analysis and documentation for the telecommunications, data computing,
                                 and software architecture of a pioneering spacecraft mission, forecasting a streamlined
                                 project plan and anticipating a 15% reduction in estimated costs through meticulous
                                 resource
                                 optimization.
                             </li>
                         </ul>
+                       
+                        
+                        
                     </div>
                     <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
 
