@@ -15,6 +15,6 @@ This portfolio is a comprehensive showcase of my professional journey. It's a re
 
 ## Contact
 
-I'm always open to discussing work opportunities, collaborations, or general inquiries. Feel free to reach out at ravitiwari2002@gmail.com
+I'm always open to discussing work opportunities or general inquiries. Feel free to reach out at ravitiwari2002@gmail.com
 
 Thank you for visiting my portfolio!
