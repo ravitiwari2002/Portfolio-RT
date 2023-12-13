@@ -11,7 +11,7 @@ This portfolio is a comprehensive showcase of my professional journey. It's a re
 - **Education:** Details about my academic background.
 - **Experience:** A timeline of my professional experience.
 - **Projects:** A collection of my work that demonstrates my skills and interests.
-- **Skills:** An overview of my technical and soft skills.
+- **Skills:** An overview of my technical skills.
 
 ## Contact
 
