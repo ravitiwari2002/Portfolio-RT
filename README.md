@@ -1,6 +1,10 @@
 # Portfolio
 
-Welcome to my portfolio repository! This repository hosts my personal portfolio website.
+## Table of Contents
+
+1. [Overview](#Overview)
+2. [Features](#Features)
+3. [Contact](#Contact)
 
 ## Overview
 
