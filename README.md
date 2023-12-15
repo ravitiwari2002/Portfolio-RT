@@ -23,3 +23,14 @@ This portfolio is a comprehensive showcase of my professional journey. It's a re
 I'm always open to discussing work opportunities or general inquiries. Feel free to reach out at ravitiwari2002@gmail.com
 
 Thank you for visiting my portfolio!
+
+## License
+
+    Copyright [2023] [Ravi Tiwari]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
