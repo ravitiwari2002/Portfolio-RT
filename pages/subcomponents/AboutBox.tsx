@@ -2,6 +2,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { motion } from "framer-motion";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Image from "next/image"; // Import Next.js Image component
 
 const AboutBox = () => {
   const aboutData = [
@@ -68,7 +69,7 @@ const AboutBox = () => {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className=" object-cover md:rounded-lg overflow-hidden"
+          className="object-cover md:rounded-lg overflow-hidden"
         >
           <AboutMeSection
             key={idx}
@@ -110,18 +111,25 @@ const AboutMeSection = ({
         borderRadius: "1rem",
       }}
     >
-      <img
-        src={src}
-        alt="logo"
-        style={{
+      {/* Optimized Image */}
+      <Box
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "0 auto",
           width: "100px",
           height: "100px",
         }}
-      />
+      >
+        <Image
+          src={src}
+          alt={`${name} logo`}
+          width={100}
+          height={100}
+          style={{ borderRadius: "50%" }}
+        />
+      </Box>
+
       <Stack paddingLeft={{ md: "2rem" }} paddingTop="1rem" width="100%">
         <Stack
           direction={{ md: "row", xs: "column" }}
@@ -166,7 +174,7 @@ const AboutMeSection = ({
             href={url}
             sx={{
               background: "linear-gradient(135deg, #ff758f 0%, #fbc2eb 100%)",
-              color: "#3c3c3c", // Slightly darker for contrast
+              color: "#3c3c3c",
               fontWeight: "bold",
               border: "1px solid #ff9aa2",
               borderRadius: "10rem",

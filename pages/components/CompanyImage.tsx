@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
 import BackButton from "../subcomponents/BackButton";
+import Image from "next/image";
 
 const CompanyImage = () => {
   return (
@@ -10,6 +11,7 @@ const CompanyImage = () => {
         background: "rgb(36,36,36)",
       }}
     >
+      {/* Back Button */}
       <BackButton />
       <Grid
         item
@@ -24,6 +26,7 @@ const CompanyImage = () => {
           alignItems="center"
           justifyContent="center"
         >
+          {/* Title and Location */}
           <Typography
             variant="h4"
             color="#fcb232"
@@ -57,12 +60,25 @@ const CompanyImage = () => {
         </Box>
       </Grid>
       <Grid item xs={4} />
+      {/* Image Section */}
       <Grid item xs={12}>
-        <img
-          src={"../images/group.jpeg"}
-          alt="group photo"
-          style={{ display: "block", margin: "2rem auto", width: "70rem" }}
-        />
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          marginTop="2rem"
+        >
+          <Image
+            src="/images/group.jpeg" 
+            alt="Group photo"
+            width={1120} // Responsive size for larger screens
+            height={640} // Adjust height to maintain aspect ratio
+            style={{
+              borderRadius: "10px", 
+            }}
+            priority 
+          />
+        </Box>
       </Grid>
     </Grid>
   );

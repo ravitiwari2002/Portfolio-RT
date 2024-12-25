@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box } from "@mui/material";
-import timelineData from "../data/timelineData";
+import timelineData from "@/data/timelineData";
 
 const Timeline = () => {
   return (
