@@ -108,7 +108,7 @@ const ProjectBox = () => {
         description="Want to talk with strangers annonymously? Whispr is the place for you. Chat with people around the world."
         demo=""
         code="https://github.com/ravitiwari2002/Whispr"
-        skills={["Dart", "Firebase"]}
+        skills={["Flutter","Dart", "Firebase"]}
       />
       
       <Project
@@ -128,7 +128,7 @@ const ProjectBox = () => {
         description="Find ETA and distance, current weather, and information about the country while you are on the trip."
         demo=""
         code="https://github.com/ravitiwari2002/Travel-Planner"
-        skills={["JavaScript", "API"]}
+        skills={["JavaScript", "Web API"]}
       />
 
       <Project

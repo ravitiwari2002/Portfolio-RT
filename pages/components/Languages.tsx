@@ -6,9 +6,9 @@ import Skill from "../subcomponents/Language";
 const Languages = () => {
   const skills = [
     { url: "/images/react.jpeg", name: "React.js" },
-    { url: "/images/typescript.png", name: "TypeScript" },
+    { url: "/images/nextjs.jpeg", name: "Next.js" },
     { url: "/images/node.png", name: "Node.js" },
-    { url: "/images/vanilla.png", name: "Vanilla JS" },
+    { url: "/images/tailwind.png", name: "Tailwind" },
     { url: "/images/java.png", name: "Java" },
     { url: "/images/c-sharp.png", name: "C#" },
     { url: "/images/python.png", name: "Python" },
